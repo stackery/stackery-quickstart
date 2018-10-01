@@ -7,8 +7,6 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
     crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
-    crossorigin="anonymous">
 </head>
 
 <body>
@@ -17,38 +15,38 @@
       background: #fff;
       width: 100%;
       height: 100%;
-      color: #212529 !important;
-      font-family: "Open Sans", sans-serif !important;
-      font-size: 1rem !important;
-      font-weight: normal !important;
-      line-height: 1.5 !important;
+      color: #212529;
+      font-family: "Open Sans", sans-serif;
+      font-size: 1rem;
+      font-weight: normal;
+      line-height: 1.5;
     }
 
     h1 {
-      margin-top: 70px !important;
+      margin-top: 70px;
       text-align: center;
-      font-size: 3.8rem !important;
-      margin-bottom: 7vh !important;
+      font-size: 3.8rem;
+      margin-bottom: 7vh;
     }
 
     h2 {
-      margin-top: 50px !important;
-      font-size: 2.4rem !important;
+      margin-top: 50px;
+      font-size: 2.4rem;
     }
 
-    h4 {
-      margin-top: 20px !important;
+    h5 {
+      margin-top: 40px;
     }
 
     a {
-      color: #79CCB5 !important;
-      text-decoration: none !important;
+      color: #79CCB5;
+      text-decoration: none;
     }
 
     a:focus,
     a:hover {
-      color: #72bfa9 !important;
-      text-decoration: none !important;
+      color: #72bfa9;
+      text-decoration: none;
     }
 
     h1,
@@ -89,6 +87,7 @@
       padding: 0 0 50% 0;
       display: block;
       margin: 0 auto;
+      z-index: -10;
     }
 
     #logo-top {
@@ -169,72 +168,6 @@
         transform: translateY(0);
       }
     }
-
-    .headline i {
-      font-size: 3rem;
-      font-weight: bold;
-      color: #79CCB5 !important;
-      margin-top: 10px !important;
-    }
-
-    .card,
-    .card:hover,
-    .card:focus,
-    .card:active {
-      background-color: transparent;
-    }
-
-    .card {
-      color: #212529 !important;
-      border-radius: 4px;
-      box-sizing: border-box;
-      display: flex;
-      flex: 1 0 340px;
-      flex-direction: column;
-      justify-content: center;
-      margin: 50px 0 30px;
-      max-width: 100%;
-      text-align: center;
-    }
-
-    .card-article {
-      transition: all .3s;
-      padding-bottom: 0 !important;
-      border: none !important;
-      min-height: 30vh;
-      -webkit-box-shadow: 5.665px 9.429px 40px 0px rgba(0, 0, 0, 0.17);
-      box-shadow: 5.665px 9.429px 40px 0px rgba(0, 0, 0, 0.17);
-    }
-
-    .card-article:hover {
-      -webkit-transform: translateY(-5px) !important;
-      transform: translateY(-5px) !important;
-      -webkit-box-shadow: 5.665px 9.429px 40px 0px rgba(0, 0, 0, 0.27);
-      box-shadow: 5.665px 9.429px 40px 0px rgba(0, 0, 0, 0.27);
-    }
-
-    .card-article-body {
-      z-index: 200;
-      padding: 35px;
-    }
-
-    .card-article .card-article-linker {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      top: 0;
-      left: 0;
-      text-decoration: none;
-      /* No underlines on the link */
-      z-index: 100;
-      /* Places the link above everything else in the div */
-      background-color: transparent;
-      /* Fix to make div clickable in IE */
-      opacity: 0;
-      /* Fix to make div clickable in IE */
-      filter: alpha(opacity=1);
-      /* Fix to make div clickable in IE */
-    }
   </style>
 
   <h1>Hello, Stackery!</h1>
@@ -244,7 +177,7 @@
         <svg id="logo-top" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
           <style type="text/css">
             .st0 {
-              fill: #80CBB4;
+              fill: #79CCB5;
             }
           </style>
           <g class="layer">
@@ -254,7 +187,7 @@
         <svg id="logo-bottom" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
           <style type="text/css">
             .st0 {
-              fill: #80CBB4;
+              fill: #79CCB5;
             }
           </style>
           <g class="layer">
@@ -264,56 +197,41 @@
       </div>
     </div>
   </div>
-  <div class="help-text container">
+  <div class="container">
     <h2>Congratulations!</h2>
     <p>
-      Your Stackery stack is up and running! You can now edit your stack from the <a href="https://app.stackery.io">Stackery Dashboard</a> or the <a href="https://docs.stackery.io/cli/">CLI</a>.
+      Your Stackery stack is up and running! You can now edit your stack from the <a href="https://app.stackery.io">Stackery Dashboard</a> or the <a href="https://docs.stackery.io/docs/using-stackery/cli/">CLI</a>.
     </p>
     <div class="row">
       <div class="col-md-4 col-sm-12">
-        <div class="card card-article box-shadow">
-          <div class="card-article-body">
-            <a href='https://docs.stackery.io/' class="card-article-linker"></a>
-            <span class="headline">
-              <i class="fas fa-book-open"></i>
-            </span>
-            <br />
-            <a href='https://docs.stackery.io/'>
-              <h4 class="card-title">Read the Docs</h4>
-            </a>
-            <p class="card-description">Our complete reference docs for the nitty-gritty details of using Stackery.</p>
-          </div>
-        </div>
+        <h5>Get Started with Stackery</h5>
+        <p>Learn the basics of using Stackery</p>
+        <hr/>
+        <ul class="list-unstyled">
+          <li><a href="https://docs.stackery.io/docs/using-stackery/dashboard">Stackery Dashboard</a></li>
+          <li><a href="https://docs.stackery.io/docs/using-stackery/cli">Stackery CLI</a></li>
+          <li><a href="https://docs.stackery.io/docs/using-stackery/stackery-role">Stackery Role</a></li>
+        </ul>
       </div>
       <div class="col-md-4 col-sm-12">
-        <div class="card card-article box-shadow">
-          <div class="card-article-body">
-            <a href='https://support.stackery.io/hc/en-us/sections/360000705392-Tutorials' class="card-article-linker"></a>
-            <span class="headline">
-              <i class="fas fa-cog"></i>
-            </span>
-            <br />
-            <a href='https://support.stackery.io/hc/en-us/sections/360000705392-Tutorials'>
-              <h4 class="card-title">Stackery Tutorials</h4>
-            </a>
-            <p class="card-description">Find out what you can do with Stackery with out step-by-step turorials.</p>
-          </div>
-        </div>
+        <h5>Stackery Tutorials</h5>
+        <p>Learn to build serverless applications</p>
+        <hr/>
+        <ul class="list-unstyled">
+          <li><a href="https://docs.stackery.io/docs/tutorials/quickstart">Quickstart</a></li>
+          <li><a href="https://docs.stackery.io/docs/tutorials/serverless-form-tutorial/">Simple Serverless Web App</a></li>
+          <li><a href="https://docs.stackery.io/docs/tutorials/cron-job-tutorial/">Serverless Cron Job</a></li>
+        </ul>
       </div>
       <div class="col-md-4 col-sm-12">
-        <div class="card card-article box-shadow">
-          <div class="card-article-body">
-            <a href='https://support.stackery.io/hc/en-us' class="card-article-linker"></a>
-            <span class="headline">
-              <i class="fas fa-terminal"></i>
-            </span>
-            <br />
-            <a href='https://support.stackery.io/hc/en-us'>
-              <h4 class="card-title">Get Help</h4>
-            </a>
-            <p class="card-description">Visit our Support site for high-level documentation and support for Stackery.</p>
-          </div>
-        </div>
+        <h5>Cloud Resource Reference</h5>
+        <p>API reference for cloud resources</p>
+        <hr/>
+        <ul class="list-unstyled">
+          <li><a href="https://docs.stackery.io/docs/api/nodes/Function">Function</a></li>
+          <li><a href="https://docs.stackery.io/docs/api/nodes/RestApi">Rest API</a></li>
+          <li><a href="https://docs.stackery.io/docs/api/nodes/CDN">CDN</a></li>
+        </ul>
       </div>
     </div>
   </div>
