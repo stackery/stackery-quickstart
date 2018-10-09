@@ -1,10 +1,11 @@
-# Stackery Hello World - Node.js 8
+# Stackery Quickstart Example
 
 This is a sample template for a serverless AWS Lambda application, written in Node.js.
 
-This application contains two Lambda Functions.  The getWelcomePage function
-responds to web request events from an API Gateway endpoint.  The logErrors
-function processes a centralized stream of all Lambda errors within this app.
+Follow the [Stackery Quickstart](https://docs.stackery.io/docs/tutorials/quickstart/) to learn to use Stackery while writing this application.
+
+This application contains one Lambda Function.  The getWelcomePage function
+responds to web request events from an API Gateway endpoint.
 
 The application architecture is defined in template.yaml, a Serverless
 Application Model (SAM) template which can be managed through the Stackery UI
@@ -21,10 +22,7 @@ Here is an overview of the files:
 │   │   ├── index.js            <-- Lambda function code
 │   │   ├── package.json        <-- NodeJS dependencies
 │   │   └── welcome.html        <-- HTML welcome page returned by Lambda function
-│   └── logErrors               <-- Source code dir for logErrors function
-│       ├── README.md           <-- Function-specific README
-│       ├── index.js            <-- Lambda function code
-│       └── package.json        <-- NodeJS dependencies
+│   │   └── welcome.css         <-- The CSS for the welcome page
 └── template.yaml               <-- SAM infrastructure-as-code template
 ```
 
