@@ -10,22 +10,26 @@
 
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css" integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     
     <!-- Custom styles for this template -->
     <link rel="stylesheet" type="text/css" href="./welcome.css"/>
   </head>
 
   <body data-spy="scroll" data-target="#top-nav" data-offset="0">
-    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light" id="top-nav">
-      <a class="navbar-brand" href="#">My Portfolio</a>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark" id="top-nav">
+      <!-- Replace this with your name or company -->
+      <a class="navbar-brand abs" href="#">Serverless Portfolio Template</a>
+      <!-- Mobile view button -->
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
+      <!-- Navigation menu -->
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
+        <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a data-scroll class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            <a data-scroll class="nav-link" href="#">Home</a>
           </li>
           <li class="nav-item">
             <a data-scroll class="nav-link" href="#portfolio">Portfolio</a>
@@ -40,9 +44,12 @@
     <main>
       <section id="home">
         <div class="container text-center">
-          <img src="./logo.png" class="rounded-circle" alt="Profile picture">
-          <h1 class="cover-heading">(Your-name-here), Serverless Developer.</h1>
-          <p class="lead">I'm an awesome developer using Stackery to build world-class serverless applications.</p>
+          <!-- Replace this image with your picture or logo -->
+          <img width="300px" src="./logo.png" class="rounded-circle" alt="Profile picture">
+          <!-- Replace this with your name and headline -->
+          <h1 class="cover-heading">Hello, Serverless Developer</h1>
+          <hr/>
+          <p class="lead">Serverless developer - DevOps - Software engineer</p>
           <p class="lead">
             <a href="#portfolio" class="btn btn-lg btn-secondary">Learn more</a>
           </p>
@@ -55,6 +62,7 @@
           <div class="row">
             <div class="col-md-4 text-center">
               <div class="card mb-4 box-shadow">
+                <div class="card-image-placeholder"></div>
                 <div class="card-body">
                   <h2>My First Project</h2>
                   <p class="card-text">Read all about it</p>
@@ -67,6 +75,7 @@
             </div>
             <div class="col-md-4 text-center">
               <div class="card mb-4 box-shadow">
+                <div class="card-image-placeholder"></div>
                 <div class="card-body">
                   <h2>My Second Project</h2>
                   <p class="card-text">Read all about it</p>
@@ -79,6 +88,7 @@
             </div>
             <div class="col-md-4 text-center">
               <div class="card mb-4 box-shadow">
+                <div class="card-image-placeholder"></div>
                 <div class="card-body">
                   <h2>My Third Project</h2>
                   <p class="card-text">Read all about it</p>
@@ -90,6 +100,7 @@
               </div>
             </div>
           </div>
+          <h1 class="text-center"><a data-scroll href="#contact"><i class="fas fa-chevron-circle-down"></i></a></h1>
         </div>
       </section>
 
@@ -100,14 +111,53 @@
         </div>
       </section>
 
+
+      <section id="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <h4 class="text-uppercase mb-4">About Serverless Portfolio Template</h4>
+              <!-- Add a short bio here -->
+              <p class="mb-0">The Serverless Portfolio Template is a free to use template created by
+                <a href="https://stackery.io" target="_blank">Stackery</a> as part of the <a href="https://docs.stackery.io/docs/tutorials/quickstart/" target="_blank">Quickstart Tutorial</a>.</p>
+            </div>
+            <div class="col-md-2"></div>
+            <div class="col-md-4 mb-5 mb-lg-0">
+              <h4 class="text-uppercase">Social Links</h4>
+              <!-- Add your own links here -->
+              <ul class="list-inline mb-0">
+                <li class="list-inline-item">
+                  <a class="btn-social" href="#">
+                    <i class="fab fa-github-square fa-3x"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a class="btn-social" href="#">
+                    <i class="fab fa-twitter fa-3x"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a class="btn-social" href="#">
+                    <i class="fab fa-linkedin fa-3x"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a class="btn-social" href="#">
+                    <i class="fab fa-facebook fa-3x"></i></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <footer>
         <div class="container">
-          <p>Serverless portfolio template by <a href="https://stackery.io" target="_blank">Stackery</a>.<a data-scroll href="#home"><br/><i class="material-icons rotated">arrow_drop_down_circle</i></a></p>
+          <p>Copyright information here. <a data-scroll href="#home">Back to top.</a></p>
         </div>
       </footer>
     </main>
-
-
 
     <!-- Bootstrap core JavaScript -->
     <!-- Placed at the end of the document so the pages load faster -->
