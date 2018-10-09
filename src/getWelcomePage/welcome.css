@@ -36,7 +36,15 @@ section:last-of-type {
   color: #fff;
   background-color: rgba(70,163,144,1);
   height: auto;
-  padding: 10vh 0 5vh 0;
+  padding: 10vh 0;
+}
+
+form {
+  margin: 10vh 0 20vh 0;
+}
+
+button {
+  margin: 3vh 0;
 }
 
 .lead {
