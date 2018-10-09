@@ -61,14 +61,10 @@ button {
   padding: 5vh;
 }
 
-.row .card-image-placeholder {
+.card-image-placeholder {
   width: 100%;
   height: 20vh;
   background-color: rgba(70,163,144,1);
-}
-
-.row .card-image-placeholder:nth-of-type(2n) {
-  background-color: rgb(48, 114, 100);
 }
 
 .cover-heading {
