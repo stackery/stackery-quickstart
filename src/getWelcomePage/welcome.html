@@ -1,47 +1,124 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-<head>
-  <title>Stackery | Serverless Development for Teams</title>
-  <meta name="description" content="Build production-ready applications with Stackery's complete serverless toolkit.">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-    crossorigin="anonymous">
-  <link rel="stylesheet" type="text/css" href="./welcome.css"/>
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
-</head>
+    <title>Hello, Stackery | Serverless Development for Teams</title>
 
-<body>
-  <h1>Hello, Stackery!</h1>
-  <div class="cont mobile-hidden">
-    <div class="cont-within-cont">
-      <div class="logo-cont">
-        <svg id="logo-top" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
-          <style type="text/css">
-            .st0 {
-              fill: #79CCB5;
-            }
-          </style>
-          <g class="layer">
-            <path class="st0" d="m270.622911,44.617975l-128.014786,-42.037545c-0.190215,0 -0.38043,0 -0.760861,-0.190215c-0.38043,0 -0.760861,-0.190215 -0.951076,-0.190215c-0.38043,0 -0.760861,0 -1.141291,0c-0.38043,0 -0.760861,0 -1.141291,0c-0.38043,0 -0.760861,0.190215 -0.951076,0.190215c-0.190215,0 -0.570645,0 -0.760861,0.190215l-128.014786,42.037545c-3.614088,1.141291 -6.086884,4.565163 -6.086884,8.559681l0,28.722485c0,0.190215 0,0.38043 0,0.760861c0,0.190215 0,0.38043 0,0.570645c0.190215,0.951076 0.38043,1.711936 0.760861,2.472797c0,0.190215 0.190215,0.190215 0.190215,0.38043c0.38043,0.760861 0.951076,1.521721 1.521721,2.092366c0,0 0,0.190215 0.190215,0.190215c0.570645,0.570645 1.331506,1.141291 2.282582,1.521721c0,0 0.190215,0.190215 0.190215,0.190215l110.705209,54.591744c1.331506,0.570645 2.663012,0.951076 3.994518,0.951076c1.711936,0 3.233657,-0.38043 4.755378,-1.331506c2.663012,-1.711936 4.184733,-4.565163 4.184733,-7.608605l0,-45.651633l6.277099,0l126.112635,62.200349c1.331506,0.570645 2.663012,0.951076 3.994518,0.951076c1.711936,0 3.233657,-0.38043 4.755378,-1.331506c2.663012,-1.711936 4.184733,-4.565163 4.184733,-7.608605l0,-92.064126c0,-3.994518 -2.472797,-7.41839 -6.277099,-8.559681zm-249.752473,14.836781l110.134564,-36.140876l0,49.64615l-8.369466,0l-101.765098,0l0,-13.505275zm92.634771,62.58078l-63.34164,-31.195282l63.34164,0l0,31.195282zm145.514579,8.559681l-110.134564,-54.401529l0,-52.879808l110.134564,36.140876l0,71.140461z" fill="black" id="svg_3"/>
-          </g>
-        </svg>
-        <svg id="logo-bottom" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
-          <style type="text/css">
-            .st0 {
-              fill: #79CCB5;
-            }
-          </style>
-          <g class="layer">
-            <path class="st0" d="m276.709795,205.349765c-0.190215,-0.951076 -0.38043,-1.711936 -0.760861,-2.472797c0,-0.190215 -0.190215,-0.190215 -0.190215,-0.38043c-0.38043,-0.760861 -0.951076,-1.521721 -1.521721,-2.092366c0,0 0,-0.190215 -0.190215,-0.190215c-0.570645,-0.570645 -1.331506,-1.141291 -2.282582,-1.521721c0,0 -0.190215,-0.190215 -0.190215,-0.190215l-110.705209,-54.591744c-2.853227,-1.331506 -6.086884,-1.141291 -8.749896,0.38043c-2.663012,1.711936 -4.184733,4.565163 -4.184733,7.608605l0,45.651633l-5.896669,0l-126.112635,-62.200349c-2.853227,-1.331506 -6.086884,-1.141291 -8.749896,0.38043c-2.663012,1.711936 -4.184733,4.565163 -4.184733,7.608605l0,92.064126c0,3.804303 2.472797,7.228175 6.086884,8.559681l128.014786,42.037545c0,0 0,0 0,0c0.951076,0.38043 1.902151,0.38043 2.853227,0.38043c0.951076,0 1.902151,-0.190215 2.853227,-0.38043c0,0 0,0 0,0l128.014786,-42.037545c3.614088,-1.141291 6.086884,-4.565163 6.086884,-8.559681l0,-28.722485c0,-0.190215 0,-0.38043 0,-0.760861c-0.190215,-0.190215 -0.190215,-0.38043 -0.190215,-0.570645zm-110.514994,-38.994103l63.34164,31.195282l-63.34164,0l0,-31.195282zm-145.324364,-8.559681l110.134564,54.401529l0,52.879808l-110.134564,-36.140876l0,-71.140461zm238.14935,71.140461l-110.134564,36.140876l0,-49.64615l8.369466,0l101.765098,0l0,13.505275z" fill="black" id="svg_2"/>
-          </g>
-        </svg>
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css" integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Material+Icons" rel="stylesheet">
+    
+    <!-- Custom styles for this template -->
+    <link rel="stylesheet" type="text/css" href="./welcome.css"/>
+  </head>
+
+  <body data-spy="scroll" data-target="#top-nav" data-offset="0">
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light" id="top-nav">
+      <a class="navbar-brand" href="#">My Portfolio</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a data-scroll class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a data-scroll class="nav-link" href="#portfolio">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a data-scroll class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
       </div>
-    </div>
-  </div>
-  <div class="container">
-    <h2>Congratulations!</h2>
-    <p>
-      Your Stackery stack is up and running! You can now edit your stack from the <a href="https://app.stackery.io">Stackery Dashboard</a> or the <a href="https://docs.stackery.io/docs/using-stackery/cli/">CLI</a>.
-    </p>
-  </div>
-</body>
+    </nav>
+
+    <main>
+      <section id="home">
+        <div class="container text-center">
+          <img src="./logo.png" class="rounded-circle" alt="Profile picture">
+          <h1 class="cover-heading">(Your-name-here), Serverless Developer.</h1>
+          <p class="lead">I'm an awesome developer using Stackery to build world-class serverless applications.</p>
+          <p class="lead">
+            <a href="#portfolio" class="btn btn-lg btn-secondary">Learn more</a>
+          </p>
+        </div>
+      </section>
+
+      <section id="portfolio">
+        <div class="container">
+          <h1 class="text-center">My Portfolio</h1>
+          <div class="row">
+            <div class="col-md-4 text-center">
+              <div class="card mb-4 box-shadow">
+                <div class="card-body">
+                  <h2>My First Project</h2>
+                  <p class="card-text">Read all about it</p>
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Website</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary">GitHub</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 text-center">
+              <div class="card mb-4 box-shadow">
+                <div class="card-body">
+                  <h2>My Second Project</h2>
+                  <p class="card-text">Read all about it</p>
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Website</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary">GitHub</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 text-center">
+              <div class="card mb-4 box-shadow">
+                <div class="card-body">
+                  <h2>My Third Project</h2>
+                  <p class="card-text">Read all about it</p>
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Website</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary">GitHub</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact">
+        <div class="container text-center">
+          <h1>Contact Me</h1>
+          <p class="lead">This would be a good place to incorporate a contact form, which you can create with Stackery following our <a href="https://docs.stackery.io/docs/tutorials/serverless-form-tutorial/" target="_blank">serverless contact form tutorial</a>!</p>
+        </div>
+      </section>
+
+      <footer>
+        <div class="container">
+          <p>Serverless portfolio template by <a href="https://stackery.io" target="_blank">Stackery</a>.<a data-scroll href="#home"><br/><i class="material-icons rotated">arrow_drop_down_circle</i></a></p>
+        </div>
+      </footer>
+    </main>
+
+
+
+    <!-- Bootstrap core JavaScript -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/popper.js@1.12.6/dist/umd/popper.js" integrity="sha384-fA23ZRQ3G/J53mElWqVJEGJzU0sTs+SvzG8fXVWP+kJQ1lwFAOkcUOysnlKJC33U" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/bootstrap-material-design@4.1.1/dist/js/bootstrap-material-design.js" integrity="sha384-CauSuKpEqAFajSpkdjv3z9t8E7RlpJ1UP0lKM/+NdtSarroVKu069AlsRPKkFBz9" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+    
+    <script type="text/javascript">
+      $('body').scrollspy({ target: '#top-nav'})
+      var scroll = new SmoothScroll('a[href*="#"]');
+    </script>
+  </body>
+</html>

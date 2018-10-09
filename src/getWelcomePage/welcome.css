@@ -1,125 +1,81 @@
+/*
+ * Globals
+ */
+
 body {
-  background: #fff;
-  width: 100%;
   height: 100%;
+  background-color: #ffffff;
+  position: relative;
+  width: 100%;
   color: #212529;
   font-family: "Open Sans", sans-serif;
-  font-size: 1rem;
-  font-weight: normal;
   line-height: 1.5;
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
 }
-h1 {
-  margin-top: 70px;
-  text-align: center;
-  font-size: 3.8rem;
-  margin-bottom: 7vh;
-  font-weight: 700;
+
+/* Section styles */
+
+section { 
+  height: 90vh;
+  width: 100vw;
+  padding-top: 10vh;
 }
-h2 {
-  margin-top: 50px;
-  font-size: 2.4rem;
+
+section:nth-of-type(2n) {
+  background-color: #f6f6f6;
 }
-h5 {
-  margin-top: 40px;
-  font-weight: 700;
+
+.lead {
+  padding: 4vh 0;
 }
+
+.card {
+  margin-top: 5vh;
+  padding: 2vh;
+  min-height: 50vh;
+  background-color: rgba(255, 255, 255, .5);
+}
+
+.card-body {
+  padding-top: 10vh;
+}
+
+/* Links */
+
 a {
   color: #79CCB5;
   text-decoration: none;
 }
-a:focus,
-a:hover {
+
+a:focus, a:hover {
   color: #72bfa9;
   text-decoration: none;
 }
-.cont {
-  min-width: 100%;
-  max-height: 35vh;
+
+/* Custom default button */
+
+.btn-secondary, .btn-secondary:hover, .btn-secondary:focus {
+  color: #fff;
+  text-shadow: none;
+  /* Prevent inheritance from `body` */
+  background-color: #333;
+  border: .05rem solid #333;
+}
+
+/*
+ * Footer
+ */
+
+footer {
+  color: rgba(0, 0, 0, .5);
+  background-color: #f6f6f6;
+  padding: 3vh 0 1vh 0;
   text-align: center;
 }
-.cont-within-cont {
-  width: 50%;
-  display: block;
-  margin: 0 auto;
-}
-.logo-cont {
-  position: relative;
-  height: 100%;
-  width: 280px;
-  padding: 0 0 50% 0;
-  display: block;
-  margin: 0 auto;
-  z-index: -10;
-}
-#logo-top {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  -webkit-animation: falling-down 5s;
-  animation: falling-down 5s;
-}
-#logo-bottom {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  -webkit-animation: falling-down 2.3s;
-  animation: falling-down 2.3s;
-}
-@media (max-width:1299px) {
-  #logo-top,
-  #logo-bottom {
-    width: 90vw !important;
-  }
-  .cont {
-    max-height: 30vh;
-  }
-}
-@-moz-document {
-  #logo-top,
-  #logo-bottom {
-    left: 25 !important;
-  }
-}
-@media (max-width:991px) {
-  .mobile-hidden {
-    display: none !important;
-  }
-}
-@-webkit-keyframes falling-down {
-  0% {
-    opacity: 0;
-    -webkit-transform: translateY(-500px);
-    transform: translateY(-500px);
-  }
-  75% {
-    opacity: 1;
-    -webkit-transform: translateY(20px);
-    transform: translateY(20px);
-  }
-  100% {
-    opacity: 1;
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
-  }
-}
-@keyframes falling-down {
-  0% {
-    opacity: 0;
-    -webkit-transform: translateY(-500px);
-    transform: translateY(-500px);
-  }
-  75% {
-    opacity: 1;
-    -webkit-transform: translateY(20px);
-    transform: translateY(20px);
-  }
-  100% {
-    opacity: 1;
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
-  }
+
+.rotated {
+  transform: rotate(180deg);
+  margin-top: 10px;
 }
