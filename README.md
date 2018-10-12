@@ -22,7 +22,6 @@ Here is an overview of the files:
 │   │   ├── index.js            <-- Lambda function code
 │   │   ├── package.json        <-- NodeJS dependencies
 │   │   └── welcome.html        <-- HTML welcome page returned by Lambda function
-│   │   └── welcome.css         <-- The CSS for the welcome page
 └── template.yaml               <-- SAM infrastructure-as-code template
 ```
 
