@@ -11,7 +11,7 @@ Resources:
         - ResourceName: getWelcomePage
       CodeUri: src/getWelcomePage
       Handler: index.handler
-      Runtime: nodejs8.10
+      Runtime: nodejs12.x
       MemorySize: 3008
       Timeout: 30
       Tracing: Active
