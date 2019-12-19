@@ -31,7 +31,7 @@ Resources:
     Properties:
       Name: !Sub
         - ${ResourceName} From Stackery Stack ${StackeryStackTagName} Environment ${StackeryEnvironmentTagName}
-        - ResourceName: apiFE76C470
+        - ResourceName: myApi
       StageName: !Ref StackeryEnvironmentAPIGatewayStageName
       DefinitionBody:
         swagger: '2.0'
@@ -45,6 +45,8 @@ Resources:
                 uri: !Sub arn:aws:apigateway:${AWS::Region}:lambda:path/2015-03-31/functions/${function61D00F31.Arn}/invocations
               responses: {}
       EndpointConfiguration: REGIONAL
+    Metadata:
+      StackeryName: myApi
 Parameters:
   StackeryStackTagName:
     Type: String
